@@ -81,14 +81,21 @@ body{
   text-align: center;
 }
 
+.menu li{
+  display: inline;
+}
+
+/* education section */
 #degrees{
   margin: 5px 0px 0px 0px;
 }
 
+/* skills section */
 #do{
   margin: 5px 0px 0px 0px;
 }
 
+/* Blurb */
 .top{
   width: 60%;
   min-width: 300px;
