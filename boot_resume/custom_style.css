@@ -1,10 +1,40 @@
   @import url('https://fonts.googleapis.com/css?family=Arvo:700,700i|Raleway:400,400i,700,700i,900,900i');
-.custom_title{
+
+.custom_name{
   font-size: 4rem;
   font-style: italic;
   font-weight: 700;
   color: #0022AA;
   font-family: "Arvo", sans-serif;
+  margin-bottom: 0px
+}
+
+#title{
+  font-size: 1.5em;
+  font-style: italic;
+  color: #33485e;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+p{
+  font-family: Raleway;
+  font-size: 1em;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.liner{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black
 }
 
 .menu{
@@ -20,23 +50,45 @@
   margin-bottom: -0.5px;
 }
 
-.liner{
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 5px;
-    border-color: black
-}
-
 @media screen and (max-width: 800px) {
   .custom_title {
     font-size:2rem;
   }
-  #headshot {
-    height: 300px;
-    width: auto;
-  }
+}
+
+/* Section titles */
+.sectionheader {
+  font-size: 1.5em;
+  background-color: #33485e;
+  color: white;
+  font-weight: 400;
+  margin: 20px 0px 10px 0px;
+  width: 70%;
+  min-width: 300px
+}
+
+/* Job title */
+.jobtitle{
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+/* Employer */
+.organization{
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+/* Job dates */
+.date{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+  margin: 2px 0px 0px 0px;
+}
+
+/* Job description */
+.description{
+  font-size: 1em;
+  margin: 10px 0px 10px 0px;
 }
