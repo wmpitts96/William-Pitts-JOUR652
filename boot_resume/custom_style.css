@@ -1,10 +1,18 @@
   @import url('https://fonts.googleapis.com/css?family=Arvo:700,700i|Raleway:400,400i,700,700i,900,900i');
 
+#container{
+  max-width: 2000px;
+  min-width: 480px;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+}
+
 .custom_name{
   font-size: 4rem;
   font-style: italic;
   font-weight: 700;
-  color: #0022AA;
+  color: #0A2878;
+  text-transform: uppercase;
   font-family: "Arvo", sans-serif;
   margin-bottom: 0px
 }
@@ -12,16 +20,15 @@
 #title{
   font-size: 1.5em;
   font-style: italic;
-  color: #33485e;
-  text-transform: uppercase;
-  font-family: Raleway;
+  color: black;
+  font-family: Raleway, serif;
   font-weight: 700;
   margin-left: 10px;
 }
 
 p{
-  font-family: Raleway;
-  font-size: 1em;
+  font-family: Raleway, sans-serif;
+  font-size: 1.25em;
   font-weight: 400;
   margin-left: 10px;
 }
@@ -38,7 +45,7 @@ p{
 }
 
 .menu{
-  padding-left: 15px;
+  padding-left: 25px;
   padding-top: 8px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -46,37 +53,41 @@ p{
 }
 
 .menu li {
-  margin-top: -0.5px;
-  margin-bottom: -0.5px;
+  margin-bottom: 1px;
 }
 
-@media screen and (max-width: 800px) {
-  .custom_title {
-    font-size:2rem;
+@media screen and (max-width: 400px) {
+  .custom_name {
+    font-size:2.5rem;
   }
 }
 
 /* Section titles */
 .sectionheader {
-  font-size: 1.5em;
+  font-size: 3em;
   background-color: #33485e;
   color: white;
-  font-weight: 400;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Arvo", sans-serif;
   margin: 20px 0px 10px 0px;
-  width: 70%;
-  min-width: 300px
+  padding-left: 5px;
+  width: 100%
 }
 
 /* Job title */
 .jobtitle{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5em;
+  font-family: Raleway, sans-serif;
 }
 
 /* Employer */
 .organization{
   font-weight: 400;
   font-size: 1.25em;
+  font-family: Raleway, sans-serif;
 }
 
 /* Job dates */
@@ -85,10 +96,51 @@ p{
   font-style: italic;
   font-size: 1em;
   margin: 2px 0px 0px 0px;
+  font-family: Raleway, sans-serif;
 }
 
 /* Job description */
 .description{
   font-size: 1em;
-  margin: 10px 0px 10px 0px;
+  margin: 5px 0px 10px 0px;
+}
+
+.jobsbox{
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+}
+
+#degrees{
+  margin: 5px 0px 0px 0px;
+}
+
+#degrees li{
+  font-weight: 400;
+  font-size: 1.25em;
+  font-family: Raleway, sans-serif;
+}
+
+#headshot{
+  max-width: auto;
+  min-width: 5%;
+}
+
+#banner{
+  min-width: 10%;
+  padding: 10px 0px;
+}
+
+#do{
+  margin: 5px 0px 0px 0px;
+}
+
+#do li{
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+#skillz{
+  margin: 0 auto;
+  width: 80%;
 }

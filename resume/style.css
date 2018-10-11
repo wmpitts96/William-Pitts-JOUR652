@@ -43,9 +43,7 @@ body{
   background-color: #33485e;
   color: white;
   font-weight: 400;
-  margin: 20px 0px 10px 0px;
-  width: 70%;
-  min-width: 300px
+  padding-left: 25px;
 }
 
 /* Job title */
