@@ -5,6 +5,7 @@
   min-width: 480px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+  padding: 0px 20px;
 }
 
 .custom_name{
@@ -105,7 +106,13 @@ p{
   margin: 5px 0px 10px 0px;
 }
 
-.jobsbox{
+#jobsbox{
+  margin: 0 auto;
+  width: 80%;
+  text-align: justify;
+}
+
+#schoolsbox{
   margin: 0 auto;
   width: 80%;
   text-align: justify;
@@ -143,4 +150,29 @@ p{
 #skillz{
   margin: 0 auto;
   width: 80%;
+}
+
+.skilltype{
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#skillz h4{
+  text-align: center;
+}
+
+#skillz h5{
+  text-align: right;
+}
+
+#icon{
+  margin: auto;
+  display: block;
+}
+
+#software{
+  padding-left: 10px;
 }
