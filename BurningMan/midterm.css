@@ -1,0 +1,80 @@
+
+
+#container{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Needed to center image and everything else. */
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.headline{
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  font-family: serif
+}
+
+.credit{
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.subhead{
+  font-weight: 600;
+  font-size: 1.25em;
+  text-align: center;
+  font-family: serif;
+}
+
+.profile{
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+p{
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* For the questions in the middle of the story. */
+.question{
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.caption{
+  font-weight: 400;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+blockquote{
+  text-align: right;
+  font-family: serif;
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+/* The attribution at the end of the blockquote. */
+
+.endquote{
+  text-align: right;
+  font-family: serif;
+  font-size: 18px;
+  color: #888888;
+}
