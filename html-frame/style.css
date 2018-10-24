@@ -51,3 +51,6 @@ footer{
   color: white;
   padding: 8px 0px;
 }
+.col p{
+  text-align: center;
+}
