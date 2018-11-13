@@ -1,0 +1,80 @@
+#container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+h2{
+  font-weight: bold;
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+h4{
+  font-size: 1em;
+  margin: 10px 0px;
+}
+
+.byline{
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.caption{
+  color: #999999;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p{
+  font-family: "Georgia", serif;
+}
+
+#map{
+  padding: 15px 0px;
+}
+
+#trafContainer{
+  border-style: solid;
+  border-width: 5px;
+  margin: 15px 0px;
+}
+
+footer{
+  background-color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  padding: 8px 0px;
+}
+.col p{
+  text-align: center;
+}

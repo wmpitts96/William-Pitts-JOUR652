@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Project Graphs</title>
+  <meta name="description" content="Merrill College of Journalism, UMD">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <!-- Load c3.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+  <!-- Load our CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Load d3.js and c3.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#routes">Routes</a>
+            <a class="dropdown-item" href="#map">Map</a>
+            <a class="dropdown-item" href="#trafContainer">Traffic</a>
+            <a class="dropdown-item" href="#timeline">Traffic</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+
+  <div id="container">
+
+<div id="routes">
+    <div class="row">
+      <div class="col">
+        <h2>Alignment J - Route Breakdown</h2>
+        <div id="routeJ"></div>
+      </div>
+      <div class="col">
+        <h2>Alignment J1 - Route Breakdown</h2>
+        <div id="routeJ1"></div>
+      </div>
+    </div>
+    </div>
+
+    <div id="map">
+      <iframe width="1000" height="800" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col5+from+1aCVbfIYItOmfp608WWkF3QvRwKk73fD-AFmkmJ5T&amp;viz=MAP&amp;h=false&amp;lat=39.01795603342127&amp;lng=-76.85727424365234&amp;t=1&amp;z=12&amp;l=col5&amp;y=5&amp;tmplt=6&amp;hml=TWO_COL_LAT_LNG"></iframe>
+    </div>
+
+    <div id="trafContainer">
+      <h2>Percentage of time spent in traffic congestion</h2>
+      <div id="traffic"></div>
+      <h4>Source: <a href="http://inrix.com/scorecard/">INRIX</a></h4>
+      <p>Note: Dallas added for the sake of comparison, as its numbers are nearly identical despite having a population roughly equal to both Baltimore and Washington combined.</p>
+      </div>
+
+    </div>
+
+    <div id="timeline">
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1p-sAQH91nBD_hM9xhqeANJXpxoUx0icyVqaBtzR4UUg&font=Default&lang=en&initial_zoom=2&height=720' width='100%' height='720' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
+
+    <script>
+    var chart3 = c3.generate({
+      bindto: '#routeJ',
+      data: {
+        columns: [
+          ['Underground', 72],
+          ['Above ground', 28],
+        ],
+        type : 'pie',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+      },
+      color: {
+        pattern: ['#0a7830', '#0098db']
+      }
+    });
+  </script>
+
+  <script>
+  var chart3 = c3.generate({
+    bindto: '#routeJ1',
+    data: {
+      columns: [
+        ['Underground', 75],
+        ['Above ground', 25],
+      ],
+      type : 'pie',
+      onclick: function (d, i) { console.log("onclick", d, i); },
+      onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+      onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+    },
+    color: {
+      pattern: ['#0f5a23', '#8080ff']
+    }
+  });
+</script>
+
+<script>
+  var chart = c3.generate({
+    bindto: '#traffic',
+      data: {
+          x : 'x',
+          columns: [
+              ['x', 'Peak Hours In/Out', 'Peak Hours Within', 'Weekends'],
+              ['Baltimore', 10, 12, 5],
+              ['Washington', 22, 19, 9],
+              ['Dallas', 10, 12, 5]
+            ],
+            type: 'bar'
+      },
+      axis: {
+          x: {
+              type: 'category' // this needed to load string x value
+          }
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
