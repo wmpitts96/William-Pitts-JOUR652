@@ -1,0 +1,159 @@
+#container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body{
+  font-family: 'PT Sans', serif;
+}
+
+.chaptitle{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.hed{
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p{
+  font-family: 'PT Serif', serif;
+  color: black;
+  font-size: 1em;
+}
+
+.stack-image{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding-top:30px;
+  height:100%;
+}
+
+h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.star-top{
+  width: 15px;
+}
+
+#intro{
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+
+.byline{
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.caption{
+ width:100%;
+ max-width:900px;
+ margin:0 auto;
+ padding-bottom:30px;
+ font-family: 'Montserrat', sans-serif;
+ color:#999;
+}
+
+.graphic-container h2{
+  font-size: 2em;
+}
+
+.graphic-container {
+ padding-top:30px;
+ padding-bottom:30px;
+ border-top:1px solid #cdcdcd;
+ border-bottom:1px solid #cdcdcd;
+ font-family: 'Montserrat', sans-serif;
+ margin:0 auto;
+}
+
+.pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p{
+ text-align:left;
+ line-height:180%;
+}
+
+.red {
+ color: #e0162b;
+}
+
+.blue {
+ color: #0052a5;
+}
+
+footer{
+  background-color: black;
+  height: 100px;
+  font-size: 2em;
+  font-family: 'Montserrat';
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+
+.intro-text{
+  font-size: 1.25em;
+  max-width: 800px;
+  font-family: 'Montserrat', serif;
+  margin: 25px 0px;
+  text-align: center!important;
+}
+
+.col p{
+  text-align: center;
+}
+
+.bg-dark {
+ background:#000 !important;
+}
+
+ul.navbar-nav {
+ margin-left:50%;
+}
+
+.navbar {
+ font-family: 'Montserrat', sans-serif;
+}
+
+a:link{
+  text-decoration: none;
+  color: #e0162b
+}
+
+a:visited{
+  color: #999
+}
+
+a:hover{
+  color: #0052a5
+}
+
+#hero{
+  text-align: center;
+}
+
+.hero-image{
+  width: 100%;
+  max-width: 900px;
+}
