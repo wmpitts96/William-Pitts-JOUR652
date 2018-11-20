@@ -4,6 +4,14 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1280px) {
+  #container{
+    width: 50%!important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  }
+
 body{
   font-family: 'PT Sans', serif;
 }
@@ -44,12 +52,7 @@ h3{
 
 .star-top{
   width: 15px;
-}
-
-#intro{
-  margin: 0 auto;
-  text-align: center;
-  width: 800px;
+  margin-right: 5px;
 }
 
 .byline{
@@ -69,8 +72,10 @@ h3{
  color:#999;
 }
 
-.graphic-container h2{
+h2{
   font-size: 2em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .graphic-container {
@@ -78,15 +83,12 @@ h3{
  padding-bottom:30px;
  border-top:1px solid #cdcdcd;
  border-bottom:1px solid #cdcdcd;
- font-family: 'Montserrat', sans-serif;
  margin:0 auto;
+ text-align: center;
 }
 
-.pic{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.graphic-container p {
+   font-family: 'Montserrat', sans-serif;
 }
 
 p{
@@ -112,12 +114,17 @@ footer{
   padding: 25px;
 }
 
+#intro{
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
 .intro-text{
   font-size: 1.25em;
   max-width: 800px;
   font-family: 'Montserrat', serif;
   margin: 25px 0px;
-  text-align: center!important;
 }
 
 .col p{
@@ -156,4 +163,17 @@ a:hover{
 .hero-image{
   width: 100%;
   max-width: 900px;
+}
+
+#infobox{
+  background-color: #e8e8e8;
+  margin: 25px auto;
+  width: 800px;
+  padding: 10px;
+}
+
+#infobox p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
