@@ -1,0 +1,62 @@
+#container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.title{
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.subtitle{
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.chaptitle{
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+}
+
+.byline{
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.caption{
+  color: #999999;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  padding: 8px 0px;
+}
