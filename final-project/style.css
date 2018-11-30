@@ -1,8 +1,33 @@
 #container{
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.textarea{
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
+
+.bgleft{
+  max-width: 100%;
+  margin-top: auto;
+  margin-left: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.bgright{
+  max-width: 100%;
+  margin-top: auto;
+  margin-right: 10px;
+  position: sticky;
+  top: 0;
+}
+
+@media screen and (max-height:)
 
 p{
   font-family: 'Raleway', sans-serif;
@@ -51,6 +76,8 @@ p{
   font-family: sans-serif;
   text-align: center;
 }
+
+
 
 footer{
   background-color: black;
