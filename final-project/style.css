@@ -6,28 +6,12 @@
 
 
 .textarea{
-  max-width: 1000px;
-  width: 100%;
   margin: 0 auto;
 }
 
-.bgleft{
-  max-width: 100%;
-  margin-top: auto;
-  margin-left: 10px;
-  position: sticky;
-  top: 0;
+.patternImage{
+  background-image: linear-gradient(180deg, red, blue);
 }
-
-.bgright{
-  max-width: 100%;
-  margin-top: auto;
-  margin-right: 10px;
-  position: sticky;
-  top: 0;
-}
-
-@media screen and (max-height:)
 
 p{
   font-family: 'Raleway', sans-serif;
@@ -45,7 +29,7 @@ p{
 .subtitle{
   font-family: 'Arvo', serif;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1.5em;
   text-align: center;
   margin: 10px 0px;
 }
@@ -53,6 +37,16 @@ p{
 .chaptitle{
   font-family: 'Arvo', serif;
   font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 15px 0px 10px 0px;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-top-width: 6px;
+  border-bottom-width: 10px;
+  border-top-color: yellow;
+  border-bottom-color: black;
 }
 
 .byline{
@@ -78,6 +72,11 @@ p{
 }
 
 
+#map{
+  padding: 15px 0px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 footer{
   background-color: black;
@@ -86,4 +85,38 @@ footer{
   text-align: center;
   color: white;
   padding: 8px 0px;
+}
+
+#sourceBox{
+  background-color: yellow;
+  border-style: dashed;
+  border-width: 8px;
+  border-color: black;
+  margin: 10px auto;
+  width: 50%;
+
+}
+
+#sourceBox strong{
+  margin-left: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#sourceBox p{
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.25em;
+  font-size: 1.25em
+}
+
+@media screen and (max-width: 1000px){
+#sourceBox strong{
+  font-size: 1em;
+  margin-left: 5px;
+}
+#sourceBox p{
+  font-size: 0.7em;
+  margin-left: 2px;
+}
 }

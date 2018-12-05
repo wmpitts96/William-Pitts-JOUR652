@@ -25,8 +25,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
 
-
-
 </head>
 
 <body>
@@ -71,8 +69,7 @@
 
   <div id="container">
     <div class="row">
-      <div class="col">
-        <img class="bgleft" src="images\train2.png" width="200px">
+      <div class="col" style="background-image:url(images/track.png); background-repeat:repeat-y; background-size:contain; margin:0px 10px 0px 0px;">
       </div>
       <div class="col-8">
         <div class="textarea">
@@ -80,59 +77,147 @@
           <h2 class="subtitle">Public Service or White Elephant?</h2>
           <p class="byline">by Will Pitts</p>
 
-          <h3 class="chaptitle">1. Japanese Innovation</h3>
-          <p>For decades, city planners have seen the future of public transportation in maglev trains – “maglev” being short for magnetic levitation. Instead of conventional steel railroad track, maglev trains glide above the track, making for a faster and smoother ride. Since the 1980s, short test tracks have been built in Japan, China, Germany, South Korea, and England, though few have survived to the present day.</p>
+          <h3 class="chaptitle">1 - Japanese Innovation</h3>
+          <p>For decades, city planners have seen the future of public transportation in maglev trains – “maglev” being short for magnetic levitation. Instead of conventional steel railroad track, maglev trains glide above the track, making for a faster and smoother ride. Since the 1980s, short test tracks have been built in Japan, China, Germany, South Korea, and England, though few have survived to the present day (1).</p>
 
-          <p>However, Japan – in particular, the Central Japan Railway Company, or JR Central – has pushed ahead with its maglev technology. In 1990, JR Central began construction on a test line in Yamanashi Prefecture, and began extensive testing on an 18.4 km (11.4 mile) section in 1997. By 2013, the line was extended, and JR Central began offering test rides to select members of the public the following year. This test track allowed for speeds of 500 kph (311 mph), fast enough to travel from Tokyo to Osaka in 48 minutes.</p>
+          <p>However, Japan – in particular, the Central Japan Railway Company, or JR Central – has pushed ahead with its maglev technology. In 1990, JR Central began construction on a test line in Yamanashi Prefecture, and began extensive testing on an 18.4 km (11.4 mile) section in 1997. By 2013, the line was extended, and JR Central began offering test rides to select members of the public the following year. This test track allowed for speeds of 500 kph (311 mph), fast enough to travel from Tokyo to Osaka in 48 minutes.(2)</p>
 
           <img src="images/jrc_maglev.JPG" alt="The maglev in Yamanashi." width="500" class="pic"></img>
           <p class="caption">The maglev in Yamanashi. Image credit: CNBC</p>
 
           <p>To establish itself as a world leader in railway technology, Japan looked to export their newly-matured system. The United States seemed to be the perfect market, though it would be a tough nut to crack.</p>
 
-          <h3 class="chaptitle">2. American Stagnation</h3>
+          <h3 class="chaptitle">2 - American Stagnation</h3>
 
-          <p>The U.S. is unique in its approach to mass transit. Due to its more spread-out nature, planes are the preferred method of travelling from city to city, even with all of the inconveniences of modern air travel. One place that isn’t spread out, however, is the Northeast Corridor, an area stretching from Boston to Washington, D.C. Here, 17% of the country’s population lives in an area that makes up 2% of its land. Highways in the area are struggling to handle the growing traffic capacity, with traffic congestion increasing 24% in the major NEC cities from 1990 to 2007 (1). </p>
+          <p>The U.S. is unique in its approach to mass transit. Due to its more spread-out nature, planes are the preferred method of travelling from city to city, even with all of the inconveniences of modern air travel. One place that isn’t spread out, however, is the Northeast Corridor, an area stretching from Boston to Washington, D.C. Here, 17% of the country’s population lives in an area that makes up 2% of its land. Highways in the area are struggling to handle the growing traffic capacity, with traffic congestion increasing 24% in the major NEC cities from 1990 to 2007 (3). Worse, America’s rail infrastructure is over a century old. Government, at both the federal and local levels, is reluctant – even loathe – to spend enough to bring it up to the standards of other world powers - as evident in 2003, when the Maryland State Senate cut off all funding to the previous Baltimore/Washington maglev project.</p>
 
-          <p>Worse, America’s rail infrastructure is over a century old, and the federal government is reluctant – even loathe – to spend enough to bring it up to the standards of other world powers. There is only one high-speed rail service in the United States, the Acela Express, which takes passengers across the Northeast Corridor at speeds up to 150 mph. Even then, it can only reach that speed intermittently due to track congestion. Amtrak, the U.S. federal rail operator, borrows the majority of the track it operates from freight lines, who naturally give their trains higher priority than Amtrak’s.</p>
+          <div id="map">
+            <iframe width="600" height="600" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1+from+1Z-5rD20fqe76aVDYeS3lsg9LsTRStWryW2W5ybJJ+where+col0+%3D+101&amp;viz=MAP&amp;h=false&amp;lat=40.19302138655953&amp;lng=-71.44334651891387&amp;t=1&amp;z=6&amp;l=col1&amp;y=5&amp;tmplt=8&amp;hml=GEOCODABLE"></iframe>
+            <p class="caption">On this map, traffic congestion is measured by number of hours of delay per commuter. The worst-hit cities are shown in big red pins, and there is a sprawling line of red pins across the Northeast Corridor.</p>
+            <p class="caption">Source: <a href="https://tti.tamu.edu/">Texas A&M Transportation Institute</a>
+          </div>
 
-          <p>The only alternative to upgrading the current tracks would be to build new ones, which would take on nearly-insurmountable economic, environmental, and legal challenges. Nonetheless, Japanese Prime Minister Shinzo Abe became personally involved in selling the maglev to the U.S., meeting directly with then-President Obama to license the maglev technology to the U.S. for free for the first 40-mile section – Washington D.C. to Baltimore.</p>
+          <p>There is only one high-speed rail service in the United States, the Acela Express, which takes passengers across the Northeast Corridor at speeds up to 150 mph (1). High-speed lines throughout the rest of the country are logistically and financially impractical. Amtrak, the U.S. federal rail operator, borrows the majority of its track from freight lines, who naturally give their trains higher priority than Amtrak’s. The only alternative to upgrading the current tracks for high-speed service would be to build new track, which would take on nearly-insurmountable economic, environmental, and legal challenges.</p>
 
-          <h3 class="chaptitle">3. Battle Lines are Drawn</h3>
+          <p>Not to be deterred, Japanese Prime Minister Shinzo Abe became personally involved in selling the maglev to the U.S., meeting directly with then-President Obama to license the maglev technology to the U.S. for free for the first 40-mile section – Washington D.C. to Baltimore. If successful, the line would extend northward to New York (1).</p>
 
-          <p>A previous attempt at a Washington-to-Baltimore maglev had stalled in 2003 after the Maryland Senate introduced a bill to block any further spending on the project.</p>
+          <p>Unlike the failed first attempt to bring the maglev to D.C., the new effort would be entirely backed by a private company, The Northeast Maglev, headed by CEO Wayne Rodgers. TNEM raised capital from JR Central, the Federal Railroad Administration, and the state of Maryland to fund its first round of impact studies. In 2015, the project scored a pair of victories. The first was more of a public relations boost by Gov. Larry Hogan, who rode the Yamanashi maglev on his June trip to Japan along with state Transport Secretary Pete Rahn. In a stance contrary to the usual Republican line, Hogan announced his support for the Maryland/DC maglev venture.(4)</p>
 
-          <p>However, the new effort would be entirely backed by a private company, The Northeast Maglev, headed by CEO Wayne Rodgers. TNEM raised capital from JR Central, the Federal Railroad Administration, and the state of Maryland to fund its first round of impact studies. In  2015, the project scored a pair of victories. The first was more of a public relations boost by Gov. Larry Hogan, who rode the Yamanashi maglev on his June trip to Japan along with state Transport Secretary Pete Rahn. In a stance contrary to the usual Republican line, Hogan announced his support for the Maryland/DC maglev venture.</p>
+          <h3 class="chaptitle">3 - Battle Lines are Drawn</h3>
 
-          <p>In November, TNEM scored a more substantial victory, and in the process, struck fear into millions of area residents. The group charged with project development, Baltimore Washington Rapid Rail, applied for – and received – a long-abandoned railroad franchise, which granted them the authority of eminent domain. Alarm bells rang in the towns that lay along the proposed route.</p>
+          <p>In November, TNEM scored a more substantial victory, and in the process, struck fear into millions of area residents. The group charged with project development, Baltimore Washington Rapid Rail, applied for – and received – a long-abandoned railroad franchise, which granted them the authority of eminent domain (5). Alarm bells rang in the towns that lay along the proposed route.</p>
 
           <p>As the months passed and details gradually leaked out through public meetings and press releases, the maglev gained significant local opposition.  Many feared that the construction process would create excessive noise, and worse, introduce more pollution than the maglev sought to eliminate in the first place. Some fail to see how it will even reduce D.C.’s infamous traffic congestion. With only three stops on the route – Baltimore, BWI Airport, and Washington – suburban traffic would be unaffected at best, as Washington's peak traffic congestion numbers take place on the roads into and out of the city.</p>
 
-          <p>Of course, there was still the matter of where to build. By January of 2018, project planners narrowed the list of possible routes down to two – both of which would tunnel through swathes of Prince George’s and Anne Arundel County. The city of Greenbelt would be hit especially hard, as most of the city is covered in green space. </p>
+          <p>There was still the matter of where to build. By January of 2018, project planners narrowed the list of possible routes down to two – both of which would tunnel through swathes of Prince George’s and Anne Arundel County. The town of Greenbelt, formed as part of the New Deal in 1935, would be hit especially hard, as most of the city is covered in green space.</p>
+
+          <div id="routes">
+            <div class="row">
+              <div class="col">
+                <div id="routeJ"></div>
+              </div>
+              <div class="col">
+                <div id="routeJ1"></div>
+              </div>
+            </div>
+          </div>
+
 
           <p>Soon, even town and state officials joined in on the opposition, with the city councils of Greenbelt, Laurel, and Bowie openly denouncing the project. One prominent opponent is Greenbelt city councilman Colin Byrd, who has repeatedly appeared at anti-maglev events wearing “Stop This Train” buttons. Another opponent is state delegate Jimmy Tarlau, district 47A, who believes that the state’s money is better spent on improving currently-existing public transportation.</p>
 
-          <p>“I think it’s a bad use of resources,” Tarlau told the Prince George's Sentinel. “We have a lot of transportation needs in Prince George’s County, and putting all this money into a high-speed line…it's just a real waste.”</p>
+          <p>“I think it’s a bad use of resources,” Tarlau told the Prince George's Sentinel. “We have a lot of transportation needs in Prince George’s County, and putting all this money into a high-speed line…it's just a real waste.” (6)</p>
 
           <p>On October 6th, the Citizens Against This SCMaglev, together with the Greenbelt Advocates for Environmental and Social Justice, held a rally outside of Veterans Memorial Park in Bladensburg. Organizers passed out flyers and buttons, while picketers held “Stop This Train” signs toward passing cars and buses - some of whom honked their horns in a show of solidarity for the cause.</p>
 
           <p>Brian and Donna Almquist are the founding members of the Greenbelt Advocates, and while the group has successfully tackled other environmental issues in the town, the maglev is their highest priority at the moment.</p>
 
-          <p>“This is a grassroots movement,” said Mr. Almquist, in an interview for the Greenbelt News-Review. “Individually, people have a very small voice, if any. So the more you can organize people...their voice becomes bigger, louder, more effective.”</p>
+          <p>“This is a grassroots movement,” said Mr. Almquist, in an interview for the Greenbelt News-Review. “Individually, people have a very small voice, if any. So the more you can organize people...their voice becomes bigger, louder, more effective.” (7)</p>
+
+          <img src="images/IMG_4727.jpg" alt="Greenbelt Advocates co-head Brian Almquist shakes hands with Greenbelt City Councilman Colin Boyd at an anti-maglev rally in Bladensburg." width="640" class="pic"></img>
+          <p class="caption">Greenbelt Advocates co-head Brian Almquist shakes hands with Greenbelt City Councilman Colin Boyd at an anti-maglev rally in Bladensburg. Image credit: Will Pitts, Greenbelt News-Review</p>
 
           <p>In February 2019, the maglev organizers will release their next Environmental Impact Statement, which will give a clearer picture of the future of the project. With the re-election of Governor Larry Hogan in November, the maglev’s most prominent supporter will still be around to back it up.</p>
 
+          <h3 class="chaptitle">4 - Conclusion</h3>
+
+          <p>The Baltimore/DC Maglev project is not the only large-scale, privately financed public project designed to improve public transportation. Elon Musk's Hyperloop intends to bring riders from Los Angeles to San Francisco in 35 minutes through a combination of maglev and vaccuum technology. However, critics doubt that the project is safe, let alone feasible.</p>
+
+          <p>However, if Florida's new Brightline is any indication, there is a precedent for such projects succeeding. After six years of planning and construction, the first section of the line opened in 2018, offering service from Miami to West Palm Beach in 75 minutes - half the time of driving. An extension to Orlando is under construction (8). But it should be noted that the Brightline uses conventional rolling stock and diesel-electric locomotives. Not only will The Northeast Maglev have to build hundreds of miles of track and tunnel through miles of land, they must also deal with radical new technology never used before in American public transport.</p>
+
+          <p>Of course, there's the elephant in the room - would it really be of use to anyone?</p>
+
+          <div id="sourceBox">
+            <strong>Sources:</strong>
+            <ol>
+              <li><p><a href="https://www.maglev.net/">maglev.net</a></p></li>
+              <li><p><a href="https://www.nytimes.com/2013/11/19/business/international/japan-pitches-americans-on-its-maglev-train.html">The New</a> <a href="https://www.nytimes.com/2014/10/23/business/backers-of-a-maglev-train-hope-to-outpace-acela-in-the-northeast-corridor.html">York Times</a></p></li>
+              <li><p>Amtrak</p></li>
+              <li><p><a href="https://www.bizjournals.com/baltimore/news/2015/05/27/in-asia-larry-hogan-will-be-a-rare-republican-to.html">Baltimore Business Journal</a></p></li>
+              <li><p><a href="https://www.masstransitmag.com/rail/press-release/12139868/the-northeast-maglev-llc-tnem-bwrr-and-tnem-announce-approval-of-railroad-franchise-request-by-the-maryland-public-service-commission">Mass Transit</a></p></li>
+              <li><p><a href="https://pgs.thesentinel.com/2018/10/11/community-rallies-against-maglev-construction/">Prince George's Sentinel</a></li>
+              <li><p>Greenbelt News-Review</p></li>
+              <li><p>Brightline/Virgin Trains USA</p></li>
+          </div>
+
         </div>
       </div>
-      <div class="col">
-        <img class="bgright" src="images\train1.png" width="200px">
+      <div class="col" style="background-image:url(images/track.png); background-repeat:repeat-y; background-size:contain; margin:0px 0px 0px 10px;">
       </div>
     </div>
   </div>
+  <footer>
+  Coded by William Pitts for JOUR652: Interactive Design and Development.<br>
+  Philip Merrill College of Journalism, University of Maryland</footer>
 
-<footer>
-  <!-- Credit to background graphic author -->
-    <a href='https://www.freepik.com/free-vector/modern-train-collection_1125357.htm'>Train graphic designed by Freepik</a></footer>
+    <script>
+    var chart3 = c3.generate({
+      bindto: '#routeJ',
+      data: {
+        columns: [
+          ['Underground', 72],
+          ['Above ground', 28],
+        ],
+        type : 'donut',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+      },
+      donut: {
+        title: "Alignment J: Route Breakdown"
+      },
+      color: {
+        pattern: ['#0a7830', '#0098db']
+      },
+      size: {
+        height: 500
+      }
+    });
+    </script>
+
+    <script>
+    var chart3 = c3.generate({
+      bindto: '#routeJ1',
+      data: {
+        columns: [
+          ['Underground', 75],
+          ['Above ground', 25],
+        ],
+        type : 'donut',
+        onclick: function (d, i) { console.log("onclick", d, i); },
+        onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+        onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+      },
+      donut: {
+        title: "Alignment J1: Route Breakdown"
+      },
+      color: {
+        pattern: ['#0f5a23', '#8080ff']
+      },
+      size: {
+        height: 500
+      }
+    });
+  </script>
 
 
 
